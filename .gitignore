@@ -1,0 +1,17 @@
+# ASP.NET
+bin/
+obj/
+
+# React
+node_modules/
+dist/
+
+# VS
+.vs/
+.vscode/
+
+# Logs
+*.log
+
+# Environment
+.env
