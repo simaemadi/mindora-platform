@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Mindora.API/Mindora.API.csproj" />
+  <Project Path="Mindora.Application/Mindora.Application.csproj" />
+  <Project Path="Mindora.Domain/Mindora.Domain.csproj" />
+  <Project Path="Mindora.Infrastructure/Mindora.Infrastructure.csproj" />
+  <Project Path="Mindora.Persistence/Mindora.Persistence.csproj" />
+</Solution>
