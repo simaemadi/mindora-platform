@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -11,11 +12,18 @@ module.exports = {
   },
 
   resolve: {
-    extensions: [".ts", ".tsx", ".js"]
+    extensions: [".ts", ".tsx", ".js"],
+    alias: {
+    "@": path.resolve(__dirname, "src"),
+  },
   },
 
 module: {
   rules: [
+    {
+      test: /\.css$/i,
+      use: ["style-loader", "css-loader", "postcss-loader"],
+    },
     {
       test: /\.(ts|tsx)$/,
       exclude: /node_modules/,
