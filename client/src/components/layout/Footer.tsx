@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import footerIllustration from "../../assets/images/footer-illustration.png";
+import { CalendarDays } from "lucide-react";
 
 const footerLinks = [
   { label: "سوالات متداول", to: "/faq" },
@@ -85,7 +86,7 @@ const Footer = () => {
               className="mt-5 inline-flex w-full max-w-[230px] items-center justify-center gap-2 rounded-xl bg-[#c49a4a] px-6 py-2.5 text-xs font-semibold text-white shadow-lg shadow-[#c49a4a]/25 transition duration-300 hover:-translate-y-0.5 hover:bg-[#b78b3b] sm:text-sm"
             >
               رزرو نوبت آنلاین
-              <span aria-hidden="true">◀</span>
+              <CalendarDays size={16} className="mr-2" />
             </NavLink>
           </div>
         </div>
