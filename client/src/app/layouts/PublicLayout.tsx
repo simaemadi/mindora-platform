@@ -64,9 +64,7 @@ const PublicLayout = () => {
         <Outlet />
       </main>
 
-      <footer style={styles.footer}>
-        <p>© 2026 Mindora Psychology Platform</p>
-      </footer>
+      <Footer />
     </div>
   );
 };

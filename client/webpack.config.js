@@ -28,6 +28,13 @@ module: {
       test: /\.(ts|tsx)$/,
       exclude: /node_modules/,
       use: "babel-loader"
+    },
+    {
+      test: /\.(png|jpe?g|gif|svg|webp)$/i,
+      type: "asset/resource",
+      generator: {
+        filename: "assets/images/[name][ext]"
+      }
     }
   ]
 },
