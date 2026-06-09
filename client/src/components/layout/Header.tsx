@@ -28,22 +28,22 @@ export default function Header() {
           <NavItem to="/" label="خانه" />
           <NavItem to="/about" label="درباره من" />
 
-          <Dropdown
+          {/* <Dropdown
             title="خدمات"
             items={servicesLinks}
             isActive={location.pathname.startsWith("/services")}
-          />
+          /> */}
 
           <NavItem to="/approach" label="رویکرد درمانی" />
           <NavItem to="/articles" label="مقالات" />
 
-          <Dropdown
+          {/* <Dropdown
             title="منابع"
             items={resourcesLinks}
             isActive={["/faq", "/terms", "/privacy"].some((x) =>
               location.pathname.startsWith(x)
             )}
-          />
+          /> */}
 
           <NavItem to="/contact" label="تماس با من" />
         </nav>
