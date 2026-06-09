@@ -9,6 +9,7 @@ import ServicesPage from "../../pages/ServicesPage";
 import ArticlesPage from "../../pages/ArticlesPage";
 import ContactPage from "../../pages/ContactPage";
 import TestApiPage from "../../pages/TestApiPage";
+import Approach from "../../pages/Approach";
 import ArticleDetailsPage from "../../pages/ArticleDetailsPage";
 
 const AppRouter = () => {
@@ -22,6 +23,7 @@ const AppRouter = () => {
           <Route path="/articles" element={<ArticlesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/test-api" element={<TestApiPage />} />
+          <Route path="/approach" element={<Approach />} />
           <Route path="/articles/:slug" element={<ArticleDetailsPage />} />
         </Route>
       </Routes>
