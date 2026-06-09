@@ -34,6 +34,7 @@ export default function Header() {
             isActive={location.pathname.startsWith("/services")}
           /> */}
 
+          <NavItem to="/services" label="خدمات" />
           <NavItem to="/approach" label="رویکرد درمانی" />
           <NavItem to="/articles" label="مقالات" />
 
