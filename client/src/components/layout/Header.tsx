@@ -16,10 +16,10 @@ export default function Header() {
   const closeMobile = useCallback(() => setMobileOpen(false), []);
 
   return (
-    <header
-      dir="rtl"
-      className="sticky top-0 z-50 border-b border-slate-200 bg-[#F5F0EA]/90 backdrop-blur"
-    >
+      <header
+        dir="rtl"
+        className="border-b border-slate-200 bg-[#F3E9E2]"
+      >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4">
         <HeaderLogo />
 
@@ -28,22 +28,23 @@ export default function Header() {
           <NavItem to="/" label="خانه" />
           <NavItem to="/about" label="درباره من" />
 
-          <Dropdown
+          {/* <Dropdown
             title="خدمات"
             items={servicesLinks}
             isActive={location.pathname.startsWith("/services")}
-          />
+          /> */}
 
+          <NavItem to="/services" label="خدمات" />
           <NavItem to="/approach" label="رویکرد درمانی" />
           <NavItem to="/articles" label="مقالات" />
 
-          <Dropdown
+          {/* <Dropdown
             title="منابع"
             items={resourcesLinks}
             isActive={["/faq", "/terms", "/privacy"].some((x) =>
               location.pathname.startsWith(x)
             )}
-          />
+          /> */}
 
           <NavItem to="/contact" label="تماس با من" />
         </nav>
