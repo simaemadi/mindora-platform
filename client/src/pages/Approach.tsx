@@ -121,9 +121,9 @@ export default function ApproachPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-10 rounded-[30px] bg-white/70 px-8 py-12 lg:grid-cols-2 lg:px-16">
           <div>
             <div className="mb-7 flex w-24 items-center">
-              <span className="h-px flex-1 bg-[#C49A4A]" />
-              <span className="mx-2 h-2 w-2 rounded-full bg-[#C49A4A]" />
-              <span className="h-px flex-1 bg-[#C49A4A]" />
+              <span className="h-px flex-1 bg-mustard-200" />
+              <span className="mx-2 h-2 w-2 rounded-full bg-mustard-200" />
+              <span className="h-px flex-1 bg-mustard-200" />
             </div>
 
             <h1 className="text-4xl font-extrabold leading-[1.8] md:text-5xl">
@@ -142,12 +142,12 @@ export default function ApproachPage() {
                 className="inline-flex items-center gap-3 rounded-xl bg-[#061B2E] px-6 py-3.5 text-sm font-bold text-white transition hover:bg-[#0B2A45]"
               >
                 رزرو نوبت آنلاین
-                <CalendarDays size={18} className="text-[#C49A4A]" />
+                <CalendarDays size={18} className="text-mustard-200" />
               </a>
 
               <a
                 href="/services"
-                className="inline-flex items-center gap-3 rounded-xl border border-[#C49A4A] px-6 py-3.5 text-sm font-bold text-[#B18435] transition hover:bg-[#C49A4A] hover:text-white"
+                className="inline-flex items-center gap-3 rounded-xl border border-mustard-200 px-6 py-3.5 text-sm font-bold text-[#B18435] transition hover:bg-mustard-200 hover:text-white"
               >
                 آشنایی با خدمات
               </a>
@@ -161,12 +161,12 @@ export default function ApproachPage() {
               {Array.from({ length: 25 }).map((_, index) => (
                 <span
                   key={index}
-                  className="h-1.5 w-1.5 rounded-full bg-[#C49A4A]"
+                  className="h-1.5 w-1.5 rounded-full bg-mustard-200"
                 />
               ))}
             </div>
 
-            <div className="relative flex h-72 w-72 items-center justify-center rounded-full text-[#C49A4A]">
+            <div className="relative flex h-72 w-72 items-center justify-center rounded-full text-mustard-200">
               <Leaf size={190} strokeWidth={1.1} />
             </div>
 
@@ -186,7 +186,7 @@ export default function ApproachPage() {
                 key={item.title}
                 className="rounded-[26px] border border-[#E7DED2] bg-white p-8 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-[#E7DED2] bg-[#FAF8F4] text-[#C49A4A]">
+                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-[#E7DED2] bg-[#FAF8F4] text-mustard-200">
                   <Icon size={40} strokeWidth={1.4} />
                 </div>
 
@@ -207,17 +207,17 @@ export default function ApproachPage() {
           <h2 className="text-center text-3xl font-extrabold">فرآیند درمان</h2>
 
           <div className="mx-auto mt-4 flex w-20 items-center justify-center">
-            <span className="h-px w-full bg-[#C49A4A]" />
-            <span className="mx-2 h-2 w-2 rounded-full bg-[#C49A4A]" />
-            <span className="h-px w-full bg-[#C49A4A]" />
+            <span className="h-px w-full bg-mustard-200" />
+            <span className="mx-2 h-2 w-2 rounded-full bg-mustard-200" />
+            <span className="h-px w-full bg-mustard-200" />
           </div>
 
           <div className="relative mt-12 grid gap-8 md:grid-cols-4">
-            <span className="absolute left-0 right-0 top-6 hidden h-px bg-[#C49A4A]/60 md:block" />
+            <span className="absolute left-0 right-0 top-6 hidden h-px bg-mustard-200/60 md:block" />
 
             {processSteps.map((step) => (
               <div key={step.number} className="relative text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-[#C49A4A] bg-white text-sm font-extrabold text-[#B18435] shadow-sm">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-mustard-200 bg-white text-sm font-extrabold text-[#B18435] shadow-sm">
                   {step.number}
                 </div>
 
@@ -240,9 +240,9 @@ export default function ApproachPage() {
           </h2>
 
           <div className="mx-auto mt-4 flex w-20 items-center justify-center">
-            <span className="h-px w-full bg-[#C49A4A]" />
-            <span className="mx-2 h-2 w-2 rounded-full bg-[#C49A4A]" />
-            <span className="h-px w-full bg-[#C49A4A]" />
+            <span className="h-px w-full bg-mustard-200" />
+            <span className="mx-2 h-2 w-2 rounded-full bg-mustard-200" />
+            <span className="h-px w-full bg-mustard-200" />
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -254,7 +254,7 @@ export default function ApproachPage() {
                   key={item.title}
                   className="flex gap-5 rounded-[22px] border border-[#E7DED2] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#FAF8F4] text-[#C49A4A]">
+                  <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#FAF8F4] text-mustard-200">
                     <Icon size={34} strokeWidth={1.4} />
                   </div>
 
@@ -282,9 +282,9 @@ export default function ApproachPage() {
           </h2>
 
           <div className="mx-auto mt-4 flex w-20 items-center justify-center">
-            <span className="h-px w-full bg-[#C49A4A]" />
-            <span className="mx-2 h-2 w-2 rounded-full bg-[#C49A4A]" />
-            <span className="h-px w-full bg-[#C49A4A]" />
+            <span className="h-px w-full bg-mustard-200" />
+            <span className="mx-2 h-2 w-2 rounded-full bg-mustard-200" />
+            <span className="h-px w-full bg-mustard-200" />
           </div>
 
           <div className="mt-10 grid gap-8 lg:grid-cols-2">
@@ -298,7 +298,7 @@ export default function ApproachPage() {
                   <li key={item} className="flex items-center gap-3">
                     <CheckCircle2
                       size={22}
-                      className="shrink-0 text-[#C49A4A]"
+                      className="shrink-0 text-mustard-200"
                     />
                     <span className="font-medium text-[#263849]">{item}</span>
                   </li>

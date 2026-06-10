@@ -17,7 +17,8 @@ module.exports = {
       colors: {
          cream: {
            100: "#F3E9E2",
-           200: "#d8cbb9"
+           200: "#d8cbb9",
+           300: "#EEE7DF"
          },
        blue: {
          100: "#121F2C",
@@ -29,7 +30,9 @@ module.exports = {
           300: "#B78B3B",       
          },
        white: {
-         100: "#FFFFFF"
+         100: "#FFFFFF",
+         200: "#FBFAF8",
+         300: "#F1E8DC"
        },
       black: {
         100: "#000",

@@ -198,22 +198,22 @@ export default function ArticleDetailsPage() {
 
               <div className="mt-6 flex flex-wrap items-center gap-6 text-sm text-[#7A8694]">
                 <span className="flex items-center gap-2">
-                  <User size={18} className="text-[#C49A4A]" />
+                  <User size={18} className="text-mustard-200" />
                   دکتر نرگس محمدی
                 </span>
 
                 <span className="flex items-center gap-2">
-                  <CalendarDays size={18} className="text-[#C49A4A]" />
+                  <CalendarDays size={18} className="text-mustard-200" />
                   {article.date}
                 </span>
 
                 <span className="flex items-center gap-2">
-                  <Clock3 size={18} className="text-[#C49A4A]" />
+                  <Clock3 size={18} className="text-mustard-200" />
                   {article.readTime}
                 </span>
 
                 <span className="flex items-center gap-2">
-                  <Eye size={18} className="text-[#C49A4A]" />
+                  <Eye size={18} className="text-mustard-200" />
                   {article.views}
                 </span>
               </div>
@@ -266,7 +266,7 @@ export default function ArticleDetailsPage() {
                       <button
                         key={index}
                         type="button"
-                        className="flex h-11 w-11 items-center justify-center rounded-full border border-[#E7DED2] text-[#C49A4A] transition hover:border-[#C49A4A] hover:bg-[#F2E8DA]"
+                        className="flex h-11 w-11 items-center justify-center rounded-full border border-[#E7DED2] text-mustard-200 transition hover:border-mustard-200 hover:bg-[#F2E8DA]"
                       >
                         <Icon size={18} />
                       </button>
@@ -318,9 +318,9 @@ export default function ArticleDetailsPage() {
               </h3>
 
               <div className="mx-auto mt-4 flex w-16 items-center justify-center">
-                <span className="h-px w-full bg-[#C49A4A]" />
-                <span className="mx-2 h-1.5 w-1.5 rounded-full bg-[#C49A4A]" />
-                <span className="h-px w-full bg-[#C49A4A]" />
+                <span className="h-px w-full bg-mustard-200" />
+                <span className="mx-2 h-1.5 w-1.5 rounded-full bg-mustard-200" />
+                <span className="h-px w-full bg-mustard-200" />
               </div>
 
               <div className="mt-7 space-y-4">
@@ -350,9 +350,9 @@ export default function ArticleDetailsPage() {
               </h3>
 
               <div className="mx-auto mt-4 flex w-16 items-center justify-center">
-                <span className="h-px w-full bg-[#C49A4A]" />
-                <span className="mx-2 h-1.5 w-1.5 rounded-full bg-[#C49A4A]" />
-                <span className="h-px w-full bg-[#C49A4A]" />
+                <span className="h-px w-full bg-mustard-200" />
+                <span className="mx-2 h-1.5 w-1.5 rounded-full bg-mustard-200" />
+                <span className="h-px w-full bg-mustard-200" />
               </div>
 
               <div className="mt-7 space-y-5">
@@ -381,11 +381,11 @@ export default function ArticleDetailsPage() {
 
 
             <div className="rounded-[24px] bg-[#061B2E] p-7 text-white shadow-xl">
-              <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center text-[#C49A4A]">
+              <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center text-mustard-200">
                 <Mail size={44} strokeWidth={1.3} />
               </div>
 
-              <h3 className="text-center text-2xl font-bold leading-10 text-[#C49A4A]">
+              <h3 className="text-center text-2xl font-bold leading-10 text-mustard-200">
                 از جدیدترین مطالب
                 <br />
                 آگاه شوید
@@ -405,7 +405,7 @@ export default function ArticleDetailsPage() {
 
               <button
                 type="button"
-                className="mt-4 w-full rounded-xl bg-[#C49A4A] py-4 font-semibold text-white transition hover:bg-[#B18435]"
+                className="mt-4 w-full rounded-xl bg-mustard-200 py-4 font-semibold text-white transition hover:bg-[#B18435]"
               >
                 عضویت در خبرنامه
               </button>
