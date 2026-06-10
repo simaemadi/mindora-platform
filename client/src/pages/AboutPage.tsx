@@ -153,9 +153,9 @@ export default function AboutPage() {
               </h1>
 
               <div className="mx-auto mt-5 flex w-20 items-center justify-center">
-                <span className="h-px w-full bg-[#C49A4A]" />
-                <span className="mx-2 h-2 w-2 rounded-full bg-[#C49A4A]" />
-                <span className="h-px w-full bg-[#C49A4A]" />
+                <span className="h-px w-full bg-mustard-200" />
+                <span className="mx-2 h-2 w-2 rounded-full bg-mustard-200" />
+                <span className="h-px w-full bg-mustard-200" />
               </div>
 
               <p className="mx-auto mt-6 max-w-xl text-base leading-9 text-[#52606D]">
@@ -169,7 +169,7 @@ export default function AboutPage() {
                 className="mx-auto mt-8 inline-flex items-center gap-3 rounded-xl bg-[#061B2E] px-7 py-4 text-sm font-bold text-white transition hover:bg-[#0B2A45]"
               >
                 رزرو نوبت مشاوره
-                <CalendarDays size={18} className="text-[#C49A4A]" />
+                <CalendarDays size={18} className="text-mustard-200" />
               </a>
             </div>
           </div>
@@ -195,7 +195,7 @@ export default function AboutPage() {
                   <Icon
                     size={42}
                     strokeWidth={1.4}
-                    className="mx-auto text-[#C49A4A]"
+                    className="mx-auto text-mustard-200"
                   />
 
                   <h3 className="mt-4 font-extrabold">{item.title}</h3>
@@ -220,9 +220,9 @@ export default function AboutPage() {
             </h2>
 
             <div className="mx-auto mt-4 flex w-20 items-center justify-center">
-              <span className="h-px w-full bg-[#C49A4A]" />
-              <span className="mx-2 h-2 w-2 rounded-full bg-[#C49A4A]" />
-              <span className="h-px w-full bg-[#C49A4A]" />
+              <span className="h-px w-full bg-mustard-200" />
+              <span className="mx-2 h-2 w-2 rounded-full bg-mustard-200" />
+              <span className="h-px w-full bg-mustard-200" />
             </div>
 
             <p className="mt-6 text-center leading-9 text-[#52606D]">
@@ -240,7 +240,7 @@ export default function AboutPage() {
                     key={item.title}
                     className="flex items-center justify-center gap-3 rounded-xl border border-[#E7DED2] bg-[#FAF8F4] px-4 py-4"
                   >
-                    <Icon size={22} className="text-[#C49A4A]" />
+                    <Icon size={22} className="text-mustard-200" />
                     <span className="text-sm font-bold">{item.title}</span>
                   </div>
                 );
@@ -255,13 +255,13 @@ export default function AboutPage() {
             </h2>
 
             <div className="mx-auto mt-4 flex w-20 items-center justify-center">
-              <span className="h-px w-full bg-[#C49A4A]" />
-              <span className="mx-2 h-2 w-2 rounded-full bg-[#C49A4A]" />
-              <span className="h-px w-full bg-[#C49A4A]" />
+              <span className="h-px w-full bg-mustard-200" />
+              <span className="mx-2 h-2 w-2 rounded-full bg-mustard-200" />
+              <span className="h-px w-full bg-mustard-200" />
             </div>
 
             <div className="relative mx-auto mt-8 max-w-xl">
-              <span className="absolute right-[86px] top-4 h-[calc(100%-32px)] w-px bg-[#C49A4A]/50" />
+              <span className="absolute right-[86px] top-4 h-[calc(100%-32px)] w-px bg-mustard-200/50" />
 
               <div className="space-y-7">
                 {timeline.map((item) => (
@@ -274,7 +274,7 @@ export default function AboutPage() {
                     </div>
 
                     <div className="relative">
-                      <span className="absolute -right-[27px] top-1.5 h-3 w-3 rounded-full bg-[#C49A4A]" />
+                      <span className="absolute -right-[27px] top-1.5 h-3 w-3 rounded-full bg-mustard-200" />
 
                       <h3 className="font-extrabold">{item.title}</h3>
                       <p className="mt-1 text-sm text-[#52606D]">
@@ -297,9 +297,9 @@ export default function AboutPage() {
           </h2>
 
           <div className="mx-auto mt-4 flex w-20 items-center justify-center">
-            <span className="h-px w-full bg-[#C49A4A]" />
-            <span className="mx-2 h-2 w-2 rounded-full bg-[#C49A4A]" />
-            <span className="h-px w-full bg-[#C49A4A]" />
+            <span className="h-px w-full bg-mustard-200" />
+            <span className="mx-2 h-2 w-2 rounded-full bg-mustard-200" />
+            <span className="h-px w-full bg-mustard-200" />
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -315,7 +315,7 @@ export default function AboutPage() {
                   <Icon
                     size={42}
                     strokeWidth={1.4}
-                    className="mx-auto text-[#C49A4A]"
+                    className="mx-auto text-mustard-200"
                   />
 
                   <h3 className="mt-4 font-extrabold">{item.title}</h3>
@@ -346,10 +346,10 @@ export default function AboutPage() {
                   <Icon
                     size={42}
                     strokeWidth={1.5}
-                    className="mx-auto text-[#C49A4A]"
+                    className="mx-auto text-mustard-200"
                   />
 
-                  <h3 className="mt-3 text-3xl font-extrabold text-[#C49A4A]">
+                  <h3 className="mt-3 text-3xl font-extrabold text-mustard-200">
                     {item.number}
                   </h3>
 
@@ -379,7 +379,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="flex items-center justify-center p-8 text-[#C49A4A]">
+          <div className="flex items-center justify-center p-8 text-mustard-200">
             <Quote size={72} strokeWidth={1.2} />
           </div>
         </div>

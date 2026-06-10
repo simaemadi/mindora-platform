@@ -166,9 +166,9 @@ export default function ContactPage() {
           <h1 className="text-4xl font-extrabold md:text-5xl">تماس با ما</h1>
 
           <div className="mx-auto mt-5 flex w-20 items-center justify-center">
-            <span className="h-px w-full bg-[#C49A4A]" />
-            <span className="mx-2 h-2 w-2 rounded-full bg-[#C49A4A]" />
-            <span className="h-px w-full bg-[#C49A4A]" />
+            <span className="h-px w-full bg-mustard-200" />
+            <span className="mx-2 h-2 w-2 rounded-full bg-mustard-200" />
+            <span className="h-px w-full bg-mustard-200" />
           </div>
 
           <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#52606D]">
@@ -189,7 +189,7 @@ export default function ContactPage() {
                 key={card.title}
                 className="rounded-[26px] border border-[#E7DED2] bg-white p-7 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
               >
-                <div className="mx-auto flex h-16 w-16 items-center justify-center text-[#C49A4A]">
+                <div className="mx-auto flex h-16 w-16 items-center justify-center text-mustard-200">
                   <Icon size={44} strokeWidth={1.45} />
                 </div>
 
@@ -203,7 +203,7 @@ export default function ContactPage() {
                   href={card.href}
                   target={card.external ? "_blank" : undefined}
                   rel={card.external ? "noopener noreferrer" : undefined}
-                  className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-[#C49A4A] px-5 py-3 text-sm font-semibold text-[#B18435] transition hover:bg-[#C49A4A] hover:text-white"
+                  className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-mustard-200 px-5 py-3 text-sm font-semibold text-[#B18435] transition hover:bg-mustard-200 hover:text-white"
                 >
                   {card.button}
 
@@ -235,9 +235,9 @@ export default function ContactPage() {
             </h2>
 
             <div className="mx-auto mt-4 flex w-20 items-center justify-center">
-              <span className="h-px w-full bg-[#C49A4A]" />
-              <span className="mx-2 h-2 w-2 rounded-full bg-[#C49A4A]" />
-              <span className="h-px w-full bg-[#C49A4A]" />
+              <span className="h-px w-full bg-mustard-200" />
+              <span className="mx-2 h-2 w-2 rounded-full bg-mustard-200" />
+              <span className="h-px w-full bg-mustard-200" />
             </div>
 
             <div className="mt-8 space-y-7">
@@ -246,7 +246,7 @@ export default function ContactPage() {
 
                 return (
                   <div key={item.title} className="flex gap-4">
-                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white text-[#C49A4A] shadow-sm">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white text-mustard-200 shadow-sm">
                       <Icon size={26} strokeWidth={1.5} />
                     </div>
 
@@ -267,9 +267,9 @@ export default function ContactPage() {
             <h2 className="text-center text-2xl font-extrabold">فرم تماس</h2>
 
             <div className="mx-auto mt-4 flex w-20 items-center justify-center">
-              <span className="h-px w-full bg-[#C49A4A]" />
-              <span className="mx-2 h-2 w-2 rounded-full bg-[#C49A4A]" />
-              <span className="h-px w-full bg-[#C49A4A]" />
+              <span className="h-px w-full bg-mustard-200" />
+              <span className="mx-2 h-2 w-2 rounded-full bg-mustard-200" />
+              <span className="h-px w-full bg-mustard-200" />
             </div>
 
             {sent && (
@@ -286,7 +286,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   type="text"
                   placeholder="نام و نام خانوادگی"
-                  className="h-14 rounded-xl border border-[#E7DED2] bg-white px-4 text-sm outline-none transition placeholder:text-[#9AA4AF] focus:border-[#C49A4A]"
+                  className="h-14 rounded-xl border border-[#E7DED2] bg-white px-4 text-sm outline-none transition placeholder:text-[#9AA4AF] focus:border-mustard-200"
                 />
 
                 <input
@@ -295,7 +295,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   type="tel"
                   placeholder="شماره تماس"
-                  className="h-14 rounded-xl border border-[#E7DED2] bg-white px-4 text-sm outline-none transition placeholder:text-[#9AA4AF] focus:border-[#C49A4A]"
+                  className="h-14 rounded-xl border border-[#E7DED2] bg-white px-4 text-sm outline-none transition placeholder:text-[#9AA4AF] focus:border-mustard-200"
                 />
               </div>
 
@@ -304,7 +304,7 @@ export default function ContactPage() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="h-14 w-full appearance-none rounded-xl border border-[#E7DED2] bg-white px-4 text-sm text-[#52606D] outline-none transition focus:border-[#C49A4A]"
+                  className="h-14 w-full appearance-none rounded-xl border border-[#E7DED2] bg-white px-4 text-sm text-[#52606D] outline-none transition focus:border-mustard-200"
                 >
                   <option value="">موضوع درخواست</option>
                   <option value="رزرو نوبت">رزرو نوبت</option>
@@ -324,7 +324,7 @@ export default function ContactPage() {
                   name="time"
                   value={formData.time}
                   onChange={handleChange}
-                  className="h-14 w-full appearance-none rounded-xl border border-[#E7DED2] bg-white px-4 text-sm text-[#52606D] outline-none transition focus:border-[#C49A4A]"
+                  className="h-14 w-full appearance-none rounded-xl border border-[#E7DED2] bg-white px-4 text-sm text-[#52606D] outline-none transition focus:border-mustard-200"
                 >
                   <option value="">زمان مناسب تماس</option>
                   <option value="صبح">صبح</option>
@@ -344,7 +344,7 @@ export default function ContactPage() {
                 onChange={handleChange}
                 placeholder="پیام شما"
                 rows={6}
-                className="w-full resize-none rounded-xl border border-[#E7DED2] bg-white px-4 py-4 text-sm leading-7 outline-none transition placeholder:text-[#9AA4AF] focus:border-[#C49A4A]"
+                className="w-full resize-none rounded-xl border border-[#E7DED2] bg-white px-4 py-4 text-sm leading-7 outline-none transition placeholder:text-[#9AA4AF] focus:border-mustard-200"
               />
 
               <label className="flex cursor-pointer items-center gap-3 text-sm text-[#52606D]">
@@ -353,7 +353,7 @@ export default function ContactPage() {
                   checked={formData.accepted}
                   onChange={handleChange}
                   type="checkbox"
-                  className="h-5 w-5 accent-[#C49A4A]"
+                  className="h-5 w-5 accent-mustard-200"
                 />
                 با قوانین و شرایط حفظ حریم خصوصی موافقم.
               </label>
@@ -363,7 +363,7 @@ export default function ContactPage() {
                 className="flex h-14 w-full items-center justify-center gap-3 rounded-xl bg-[#061B2E] font-bold text-white transition hover:bg-[#0B2A45]"
               >
                 ارسال درخواست مشاوره
-                <Send size={20} className="text-[#C49A4A]" />
+                <Send size={20} className="text-mustard-200" />
               </button>
 
               <p className="text-center text-sm leading-7 text-[#7A8694]">
@@ -393,9 +393,9 @@ export default function ContactPage() {
             <h2 className="text-2xl font-extrabold">آدرس مطب</h2>
 
             <div className="mt-4 flex w-20 items-center">
-              <span className="h-px w-full bg-[#C49A4A]" />
-              <span className="mx-2 h-2 w-2 rounded-full bg-[#C49A4A]" />
-              <span className="h-px w-full bg-[#C49A4A]" />
+              <span className="h-px w-full bg-mustard-200" />
+              <span className="mx-2 h-2 w-2 rounded-full bg-mustard-200" />
+              <span className="h-px w-full bg-mustard-200" />
             </div>
 
             <p className="mt-6 leading-8 text-[#52606D]">{CLINIC_ADDRESS}</p>
@@ -405,7 +405,7 @@ export default function ContactPage() {
                 href={googleMapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl border border-[#C49A4A] px-6 py-3 font-semibold text-[#B18435] transition hover:bg-[#C49A4A] hover:text-white"
+                className="inline-flex items-center gap-2 rounded-xl border border-mustard-200 px-6 py-3 font-semibold text-[#B18435] transition hover:bg-mustard-200 hover:text-white"
               >
                 مشاهده در گوگل مپ
                 <Navigation size={18} />
@@ -418,7 +418,7 @@ export default function ContactPage() {
                 className="inline-flex items-center gap-2 rounded-xl bg-[#061B2E] px-6 py-3 font-semibold text-white transition hover:bg-[#0B2A45]"
               >
                 پیام در واتساپ
-                <MessageCircle size={18} className="text-[#C49A4A]" />
+                <MessageCircle size={18} className="text-mustard-200" />
               </a>
             </div>
           </div>
@@ -431,9 +431,9 @@ export default function ContactPage() {
           <h2 className="text-center text-2xl font-extrabold">سوالات متداول</h2>
 
           <div className="mx-auto mt-4 flex w-20 items-center justify-center">
-            <span className="h-px w-full bg-[#C49A4A]" />
-            <span className="mx-2 h-2 w-2 rounded-full bg-[#C49A4A]" />
-            <span className="h-px w-full bg-[#C49A4A]" />
+            <span className="h-px w-full bg-mustard-200" />
+            <span className="mx-2 h-2 w-2 rounded-full bg-mustard-200" />
+            <span className="h-px w-full bg-mustard-200" />
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -443,7 +443,7 @@ export default function ContactPage() {
                 className="rounded-[22px] border border-[#E7DED2] bg-white p-6 shadow-sm"
               >
                 <div className="mb-4 flex items-center gap-3">
-                  <HelpCircle size={22} className="text-[#C49A4A]" />
+                  <HelpCircle size={22} className="text-mustard-200" />
                   <h3 className="font-extrabold">{faq.question}</h3>
                 </div>
 

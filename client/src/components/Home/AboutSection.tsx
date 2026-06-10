@@ -1,64 +1,56 @@
 import React from "react";
-import { CheckCircle2, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 
 import aboutImage from "../../assets/images/about-therapist.png";
-
-const aboutItems = [
-  "دکتری روان‌شناسی بالینی",
-  "پژوهشگر حوزه نوروفیدبک و PTSD",
-  "نویسنده کتاب و مدرس دانشگاه",
-  "دارای مقاله‌های علمی داخلی و بین‌المللی",
-  "بیش از ۱۰ سال تجربه درمان فردی و گروهی",
-];
+import { aboutData } from "../../data/aboutData";
 
 export default function AboutSection() {
   return (
-    <section dir="rtl" className="bg-[#FBFAF8] py-16">
+    <section dir="rtl" className="bg-white-200 py-2 md:py-4">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <div className="grid overflow-hidden rounded-3xl bg-[#071827] shadow-xl md:grid-cols-2">
+        <div className="grid overflow-hidden rounded-3xl bg-blue-100 shadow-xl md:grid-cols-2">
           
           {/* Content */}
-          <div className="order-2 flex flex-col justify-center px-7 py-10 text-white md:order-1 md:px-12 lg:px-16">
-            <span className="mb-3 text-sm font-medium text-[#C49A4A]">
-              درباره من
-            </span>
-
-            <h2 className="text-2xl font-extrabold leading-10 md:text-3xl">
-              همراهی علمی، انسانی و امن در مسیر درمان
+          <div className="order-2 flex flex-col justify-center px-6 py-8 text-white md:order-1 md:px-10 lg:px-14">
+            <h2 className="text-center text-2xl font-bold text-mustard-100 md:text-3xl">
+              {aboutData.title}
             </h2>
 
-            <ul className="mt-7 space-y-4">
-              {aboutItems.map((item) => (
+            <ul className="mx-auto mt-7 w-fit space-y-3 text-cream-300 md:mx-0 md:mr-10">
+              {aboutData.items.map((item) => (
                 <li
                   key={item}
-                  className="flex items-center gap-3 text-sm leading-7 text-slate-100 md:text-base"
+                  className="flex items-center gap-3 text-sm leading-7 md:text-[15px]"
                 >
-                  <CheckCircle2
-                    size={18}
-                    strokeWidth={2}
-                    className="shrink-0 text-[#C49A4A]"
-                  />
+                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-mustard-100" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
 
-            <div className="mt-8 rounded-2xl border border-white/10 bg-white/5 px-5 py-5">
+            <div className="mt-8 flex items-start gap-4 border-t border-white/10 pt-6">
               <Quote
-                size={28}
-                strokeWidth={2}
-                className="mb-3 rotate-180 text-[#C49A4A]"
+                size={24}
+                strokeWidth={1.8}
+                className="mt-1 shrink-0 text-mustard-100"
+                aria-hidden="true"
               />
 
-              <p className="text-sm leading-8 text-slate-100 md:text-base">
-                باور دارم روان‌درمانی زمانی مؤثر است که تخصص علمی، رابطه انسانی
-                و احساس امنیت در کنار یکدیگر قرار بگیرند.
+              <p className="text-xs leading-8 text-cream-300 md:text-sm">
+                {aboutData.quote}
               </p>
+
+              <Quote
+                size={24}
+                strokeWidth={1.8}
+                className="mt-1 shrink-0 rotate-180 text-mustard-100"
+                aria-hidden="true"
+              />
             </div>
           </div>
 
           {/* Image */}
-          <div className="order-1 min-h-[320px] md:order-2 md:min-h-[520px]">
+          <div className="order-1 min-h-[260px] md:order-2 md:min-h-[450px]">
             <img
               src={aboutImage}
               alt="دکتر روان‌شناس بالینی"
