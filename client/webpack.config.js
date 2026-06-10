@@ -47,8 +47,8 @@ module: {
 
 devServer: {
   port: 3000,
+  historyApiFallback: true,
+  open: true,
   hot: true,
-  static: "./dist",
-  open: true
 }
 };

@@ -155,7 +155,7 @@ export default function ApproachPage() {
           </div>
 
           <div className="relative flex min-h-[360px] items-center justify-center">
-            <div className="absolute h-72 w-72 rounded-[45%] bg-[#F3E9E2]" />
+            <div className="absolute h-72 w-72 rounded-[45%] bg-cream-100" />
             <div className="absolute right-24 top-20 h-32 w-32 rounded-full bg-[#F8F4EE]" />
             <div className="absolute left-20 top-28 grid grid-cols-5 gap-2 opacity-50">
               {Array.from({ length: 25 }).map((_, index) => (

@@ -1,7 +1,8 @@
-import React, { useCallback, useState } from "react";
+import React from "react";
+import { useCallback, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-import { navItems, servicesLinks, resourcesLinks } from "./Navbar";
+import { headerMenu } from "../../data/headerMenuItem";
 
 import { NavItem } from "./NavItem";
 import { Dropdown } from "./Dropdown";
@@ -13,40 +14,44 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
-  const closeMobile = useCallback(() => setMobileOpen(false), []);
+  const closeMobile = useCallback(() => {
+    setMobileOpen(false);
+  }, []);
+
+  const isDropdownActive = (item: (typeof headerMenu)[number]) => {
+    return (
+      location.pathname.startsWith(item.to) ||
+      item.children?.some((child) => location.pathname.startsWith(child.to))
+    );
+  };
 
   return (
-      <header
-        dir="rtl"
-        className="border-b border-slate-200 bg-[#F3E9E2]"
-      >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4">
+    <header dir="rtl" className="border-b border-slate-200 bg-cream-100">
+      <div className="mx-auto flex h-20 mx-auto items-center justify-between px-4">
         <HeaderLogo />
 
         {/* Desktop Nav */}
         <nav className="hidden items-center gap-8 lg:flex">
-          <NavItem to="/" label="خانه" />
-          <NavItem to="/about" label="درباره من" />
+          {headerMenu.map((item:any) => {
+            if (item.children?.length) {
+              return (
+                <Dropdown
+                  key={item.id}
+                  title={item.label}
+                  items={item.children}
+                  isActive={true}
+                />
+              );
+            }
 
-          {/* <Dropdown
-            title="خدمات"
-            items={servicesLinks}
-            isActive={location.pathname.startsWith("/services")}
-          /> */}
-
-          <NavItem to="/services" label="خدمات" />
-          <NavItem to="/approach" label="رویکرد درمانی" />
-          <NavItem to="/articles" label="مقالات" />
-
-          {/* <Dropdown
-            title="منابع"
-            items={resourcesLinks}
-            isActive={["/faq", "/terms", "/privacy"].some((x) =>
-              location.pathname.startsWith(x)
-            )}
-          /> */}
-
-          <NavItem to="/contact" label="تماس با من" />
+            return (
+              <NavItem
+                key={item.id}
+                to={item.to}
+                label={item.label}
+              />
+            );
+          })}
         </nav>
 
         <HeaderActions
@@ -55,7 +60,12 @@ export default function Header() {
         />
       </div>
 
-      {mobileOpen && <MobileMenu onClose={closeMobile} />}
+      {mobileOpen && (
+        <MobileMenu
+          items={headerMenu}
+          onClose={closeMobile}
+        />
+      )}
     </header>
   );
 }

@@ -434,7 +434,7 @@ export default function ArticlesPage() {
 
       {/* Bottom Suggestion Box */}
       <section className="px-6 pb-10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 rounded-[24px] bg-[#F3E9E2] p-7 text-center md:flex-row md:text-right">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 rounded-[24px] bg-cream-100 p-7 text-center md:flex-row md:text-right">
           <div className="flex flex-col items-center gap-5 md:flex-row">
             <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[#E8D8C0] text-[#B18435]">
               <BookOpen size={36} strokeWidth={1.5} />

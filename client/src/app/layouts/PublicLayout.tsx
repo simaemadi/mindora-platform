@@ -8,7 +8,7 @@ const PublicLayout = () => {
     <div className="min-h-screen bg-slate-50 text-slate-900 ">
       <Header />
 
-      <main className="min-h-[calc(100vh-80px)]">
+      <main className="min-h-[calc(100vh-80px)] w-full">
         <Outlet />
       </main>
 

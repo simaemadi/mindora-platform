@@ -23,7 +23,7 @@ export function Dropdown({
       <button
         type="button"
         className={`flex items-center gap-1 text-sm font-medium transition ${
-          isActive ? "text-[#c49a4a]" : "text-[#172637] hover:text-[#c49a4a]"
+          isActive ? "text-mustard-200" : "text-black-600 hover:text-mustard-200"
         }`}
       >
         {title}
@@ -42,8 +42,8 @@ export function Dropdown({
             className={({ isActive }) =>
               `block rounded-xl px-3 py-2 text-sm transition ${
                 isActive
-                  ? "bg-[#f5eddf] text-[#c49a4a]"
-                  : "hover:bg-[#f8f2e8]"
+                  ? "bg-white-100 text-mustard-200"
+                  : "hover:bg-white-100"
               }`
             }
           >
