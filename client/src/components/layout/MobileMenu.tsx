@@ -1,26 +1,27 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { navItems } from "./Navbar";
+import { Link } from "react-router-dom";
+import type { HeaderMenuItem } from "../../data/headerMenuItem"
 
-export function MobileMenu({
-  onClose,
-}: {
+type MobileMenuProps = {
+  items: HeaderMenuItem[];
   onClose: () => void;
-}) {
+};
+
+export function MobileMenu({ items, onClose }: MobileMenuProps) {
   return (
-    <div className="border-t bg-[#F5F0EA] lg:hidden">
-      <nav className="flex flex-col p-4">
-        {navItems.map((item) => (
-          <NavLink
-            key={item.to}
+    <nav className="border-t border-slate-200 bg-cream-100 px-4 py-4 lg:hidden">
+      <div className="flex flex-col gap-4">
+        {items.map((item) => (
+          <Link
+            key={item.id}
             to={item.to}
             onClick={onClose}
-            className="rounded-xl px-3 py-3 transition hover:bg-white"
+            className="text-sm font-medium text-slate-700"
           >
             {item.label}
-          </NavLink>
+          </Link>
         ))}
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }

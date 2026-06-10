@@ -12,6 +12,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@fontsource/estedad": "^5.2.1",
     "@fontsource/vazirmatn": "^5.2.8",
     "axios": "^1.17.0",
     "lucide-react": "^1.17.0",

@@ -21,8 +21,8 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <section dir="rtl" className="relative overflow-hidden bg-[#F3E9E2]">
-        <div className="mx-auto grid min-h-[520px] max-w-7xl grid-cols-1 items-center gap-10 px-5 py-10 md:px-8 xl:grid-cols-[0.95fr_1.05fr] xl:py-0">
+    <section dir="rtl" className="relative overflow-hidden bg-cream-100 mx-auto">
+        <div className="mx-auto grid min-h-[320px] grid-cols-1 items-center gap-10 px-5 py-10 md:px-8 xl:grid-cols-[0.95fr_1.05fr] xl:py-0">
         <HeroImage slide={activeSlide} />
         <HeroContent slide={activeSlide} />
         </div>

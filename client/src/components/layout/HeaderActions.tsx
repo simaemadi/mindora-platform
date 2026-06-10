@@ -1,6 +1,6 @@
 import React from "react";
 import { CalendarDays, Menu, X } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { ReserveButton } from "../common/ReserveButton";
 
 export function HeaderActions({
   mobileOpen,
@@ -11,14 +11,28 @@ export function HeaderActions({
 }) {
   return (
     <div className="flex items-center gap-2">
-      <NavLink
-        to="/contact"
-        className="inline-flex items-center justify-center rounded-lg bg-[#B28945]
-        px-4 py-2 text-xs font-semibold text-white transition hover:bg-[#a67a3d] lg:text-sm"
-      >
-        رزرو نوبت
-        <CalendarDays size={16} className="mr-2" />
-      </NavLink>
+    <ReserveButton
+      label="رزرو نوبت آنلاین"
+      to="/contact"
+      icon={<CalendarDays size={16} />}
+      bgColor="#B8893D"
+      hoverBgColor="#A8772F"
+      textColor="#FFFFFF"
+      height={40}
+      width={140}
+        className="
+          bg-mustard-100
+          text-white
+          hover:bg-mustard-200
+          rounded-lg
+          px-3
+          text-[10px]
+          font-small
+          tracking-[-0.01em]
+          whitespace-nowrap
+          gap-2
+        "
+    />
 
       <button
         onClick={() => setMobileOpen((p) => !p)}
