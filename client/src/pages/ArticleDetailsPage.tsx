@@ -157,14 +157,14 @@ export default function ArticleDetailsPage() {
   if (!article) {
     return (
       <main dir="rtl" className="min-h-screen bg-[#F8F4EE] px-6 py-20 text-[#0B2238]">
-        <div className="mx-auto max-w-3xl rounded-[26px] border border-[#E7DED2] bg-white p-10 text-center shadow-sm">
+        <div className="mx-auto max-w-3xl rounded-[26px] border border-cream-200 bg-white p-10 text-center shadow-sm">
           <h1 className="text-3xl font-extrabold">مقاله پیدا نشد</h1>
-          <p className="mt-4 leading-8 text-[#52606D]">
+          <p className="mt-4 leading-8 text-black-500">
             آدرس مقاله درست است، اما برای این slug مقاله‌ای تعریف نشده.
           </p>
           <Link
             to="/articles"
-            className="mt-7 inline-flex rounded-xl bg-[#061B2E] px-7 py-3 font-bold text-white"
+            className="mt-7 inline-flex rounded-xl bg-black-300 px-7 py-3 font-bold text-white"
           >
             برگشت به مقالات
           </Link>
@@ -188,7 +188,7 @@ export default function ArticleDetailsPage() {
             </div>
 
             <div>
-              <span className="rounded-md bg-[#F2E8DA] px-4 py-1.5 text-xs font-bold text-[#B18435]">
+              <span className="rounded-md bg-[#F2E8DA] px-4 py-1.5 text-xs font-bold text-mustard-100">
                 {article.category}
               </span>
 
@@ -219,7 +219,7 @@ export default function ArticleDetailsPage() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-[28px] border border-[#E7DED2] bg-white shadow-sm">
+            <div className="overflow-hidden rounded-[28px] border border-cream-200 bg-white shadow-sm">
               <img
                 src={article.image}
                 alt={article.title}
@@ -227,19 +227,19 @@ export default function ArticleDetailsPage() {
               />
             </div>
 
-            <div className="rounded-[24px] border border-[#E7DED2] bg-white p-7 shadow-sm">
+            <div className="rounded-[24px] border border-cream-200 bg-white p-7 shadow-sm">
               <p className="text-lg leading-10 text-[#263849]">
                 {article.intro}
               </p>
             </div>
 
-            <div className="rounded-[24px] border border-[#E7DED2] bg-white p-8 shadow-sm">
+            <div className="rounded-[24px] border border-cream-200 bg-white p-8 shadow-sm">
               {article.sections.map((section, index) => (
                 <section
                   key={section.title}
                   className={`py-7 ${
                     index !== article.sections.length - 1
-                      ? "border-b border-[#E7DED2]"
+                      ? "border-b border-cream-200"
                       : ""
                   }`}
                 >
@@ -247,14 +247,14 @@ export default function ArticleDetailsPage() {
                     {(index + 1).toLocaleString("fa-IR")}. {section.title}
                   </h2>
 
-                  <p className="mt-4 leading-10 text-[#52606D]">
+                  <p className="mt-4 leading-10 text-black-500">
                     {section.text}
                   </p>
                 </section>
               ))}
             </div>
 
-            <div className="rounded-[24px] border border-[#E7DED2] bg-white p-6 shadow-sm">
+            <div className="rounded-[24px] border border-cream-200 bg-white p-6 shadow-sm">
               <div className="flex flex-col items-center justify-between gap-5 md:flex-row">
                 <h3 className="font-extrabold">
                   این مقاله را با دیگران به اشتراک بگذارید
@@ -266,7 +266,7 @@ export default function ArticleDetailsPage() {
                       <button
                         key={index}
                         type="button"
-                        className="flex h-11 w-11 items-center justify-center rounded-full border border-[#E7DED2] text-mustard-200 transition hover:border-mustard-200 hover:bg-[#F2E8DA]"
+                        className="flex h-11 w-11 items-center justify-center rounded-full border border-cream-200 text-mustard-200 transition hover:border-mustard-200 hover:bg-[#F2E8DA]"
                       >
                         <Icon size={18} />
                       </button>
@@ -279,12 +279,12 @@ export default function ArticleDetailsPage() {
 
           {/* Sidebar Right */}
           <aside dir="rtl" className="space-y-6">
-            <div className="rounded-[24px] border border-[#E7DED2] bg-white p-6 shadow-sm">
+            <div className="rounded-[24px] border border-cream-200 bg-white p-6 shadow-sm">
               <h3 className="text-center text-xl font-extrabold">
                 جستجو در مقالات
               </h3>
 
-              <div className="mt-5 flex items-center gap-3 rounded-xl border border-[#E7DED2] bg-white px-4">
+              <div className="mt-5 flex items-center gap-3 rounded-xl border border-cream-200 bg-white px-4">
                 <Search size={20} className="text-[#7A8694]" />
 
                 <input
@@ -302,7 +302,7 @@ export default function ArticleDetailsPage() {
                     <Link
                       key={item.slug}
                       to={`/articles/${item.slug}`}
-                      className="block rounded-xl bg-[#FAF8F4] px-4 py-3 text-sm font-semibold transition hover:text-[#B18435]"
+                      className="block rounded-xl bg-[#FAF8F4] px-4 py-3 text-sm font-semibold transition hover:text-mustard-100"
                     >
                       {item.title}
                     </Link>
@@ -312,7 +312,7 @@ export default function ArticleDetailsPage() {
             </div>
 
             {/* Categories */}
-            <div className="rounded-[24px] border border-[#E7DED2] bg-white p-7 shadow-sm">
+            <div className="rounded-[24px] border border-cream-200 bg-white p-7 shadow-sm">
               <h3 className="text-center text-xl font-extrabold">
                 دسته‌بندی مقالات
               </h3>
@@ -335,7 +335,7 @@ export default function ArticleDetailsPage() {
                   >
                     <span className="font-semibold">{item.title}</span>
 
-                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#F2E8DA] text-xs font-semibold text-[#B18435]">
+                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#F2E8DA] text-xs font-semibold text-mustard-100">
                       {item.count.toLocaleString("fa-IR")}
                     </span>
                   </button>
@@ -344,7 +344,7 @@ export default function ArticleDetailsPage() {
             </div>
 
             {/* Popular */}
-            <div className="rounded-[24px] border border-[#E7DED2] bg-white p-7 shadow-sm">
+            <div className="rounded-[24px] border border-cream-200 bg-white p-7 shadow-sm">
               <h3 className="text-center text-xl font-extrabold">
                 مطالب محبوب
               </h3>
@@ -380,7 +380,7 @@ export default function ArticleDetailsPage() {
 
 
 
-            <div className="rounded-[24px] bg-[#061B2E] p-7 text-white shadow-xl">
+            <div className="rounded-[24px] bg-black-300 p-7 text-white shadow-xl">
               <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center text-mustard-200">
                 <Mail size={44} strokeWidth={1.3} />
               </div>
@@ -405,7 +405,7 @@ export default function ArticleDetailsPage() {
 
               <button
                 type="button"
-                className="mt-4 w-full rounded-xl bg-mustard-200 py-4 font-semibold text-white transition hover:bg-[#B18435]"
+                className="mt-4 w-full rounded-xl bg-mustard-200 py-4 font-semibold text-white transition hover:bg-mustard-100"
               >
                 عضویت در خبرنامه
               </button>

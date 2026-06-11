@@ -18,7 +18,8 @@ module.exports = {
          cream: {
            100: "#F3E9E2",
            200: "#d8cbb9",
-           300: "#EEE7DF"
+           300: "#EEE7DF",
+           400: "#F4EEEA"
          },
        blue: {
          100: "#121F2C",
