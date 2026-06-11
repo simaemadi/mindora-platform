@@ -168,7 +168,7 @@ export default function ArticlesPage() {
             <span className="h-px w-full bg-mustard-200" />
           </div>
 
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#52606D]">
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-black-500">
             در این بخش می‌توانید مقالات علمی و کاربردی در حوزه روانشناسی،
             سلامت ذهن و بهبود کیفیت زندگی را مطالعه کنید.
           </p>
@@ -177,7 +177,7 @@ export default function ArticlesPage() {
 
       {/* Category Bar */}
       <section className="relative z-10 -mt-20 px-6">
-        <div className="mx-auto max-w-7xl rounded-[26px] border border-[#E7DED2] bg-white px-5 py-6 shadow-[0_20px_50px_rgba(0,0,0,0.07)]">
+        <div className="mx-auto max-w-7xl rounded-[26px] border border-cream-200 bg-white px-5 py-6 shadow-[0_20px_50px_rgba(0,0,0,0.07)]">
           <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
             {categories.map((item, index) => {
               const Icon = item.icon;
@@ -193,10 +193,10 @@ export default function ArticlesPage() {
                   }`}
                 >
                   {index !== categories.length - 1 && (
-                    <span className="absolute left-0 top-1/2 hidden h-16 w-px -translate-y-1/2 bg-[#E7DED2] lg:block" />
+                    <span className="absolute left-0 top-1/2 hidden h-16 w-px -translate-y-1/2 bg-cream-200 lg:block" />
                   )}
 
-                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-[#E7DED2] bg-white text-mustard-200 shadow-sm">
+                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-cream-200 bg-white text-mustard-200 shadow-sm">
                     <Icon size={30} strokeWidth={1.5} />
                   </div>
 
@@ -237,7 +237,7 @@ export default function ArticlesPage() {
                 {filteredArticles.map((article) => (
                   <article
                     key={article.slug}
-                    className="overflow-hidden rounded-[22px] border border-[#E7DED2] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                    className="overflow-hidden rounded-[22px] border border-cream-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
                   >
                     <div className="relative h-[210px] overflow-hidden">
                       <img
@@ -256,11 +256,11 @@ export default function ArticlesPage() {
                         {article.title}
                       </h3>
 
-                      <p className="mt-3 line-clamp-3 text-sm leading-7 text-[#52606D]">
+                      <p className="mt-3 line-clamp-3 text-sm leading-7 text-black-500">
                         {article.description}
                       </p>
 
-                      <div className="mt-6 flex items-center justify-between border-t border-[#E7DED2] pt-4 text-xs text-[#7A8694]">
+                      <div className="mt-6 flex items-center justify-between border-t border-cream-200 pt-4 text-xs text-[#7A8694]">
                         <span className="flex items-center gap-1.5">
                           <CalendarDays size={14} />
                           {article.date}
@@ -274,7 +274,7 @@ export default function ArticlesPage() {
 
                       <Link
                         to={`/articles/${article.slug}`}
-                        className="mt-5 inline-flex w-fit items-center gap-2 text-sm font-semibold text-mustard-200 transition hover:text-[#B18435]"
+                        className="mt-5 inline-flex w-fit items-center gap-2 text-sm font-semibold text-mustard-200 transition hover:text-mustard-100"
                       >
                         ادامه مطلب
                         <ArrowLeft size={17} />
@@ -284,10 +284,10 @@ export default function ArticlesPage() {
                 ))}
               </div>
             ) : (
-              <div className="rounded-[26px] border border-[#E7DED2] bg-white p-12 text-center shadow-sm">
+              <div className="rounded-[26px] border border-cream-200 bg-white p-12 text-center shadow-sm">
                 <h3 className="text-2xl font-extrabold">مقاله‌ای پیدا نشد</h3>
 
-                <p className="mt-4 leading-8 text-[#52606D]">
+                <p className="mt-4 leading-8 text-black-500">
                   لطفاً عبارت دیگری را جستجو کنید یا دسته‌بندی را تغییر دهید.
                 </p>
 
@@ -297,7 +297,7 @@ export default function ArticlesPage() {
                     setSearchTerm("");
                     setActiveCategory("همه مقالات");
                   }}
-                  className="mt-6 rounded-xl bg-mustard-200 px-6 py-3 font-semibold text-white transition hover:bg-[#B18435]"
+                  className="mt-6 rounded-xl bg-mustard-200 px-6 py-3 font-semibold text-white transition hover:bg-mustard-100"
                 >
                   نمایش همه مقالات
                 </button>
@@ -307,7 +307,7 @@ export default function ArticlesPage() {
             {/*Pagination UI
             {filteredArticles.length > 0 && (
               <div className="mt-10 flex items-center justify-center gap-3">
-                <button className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#E7DED2] bg-white text-[#0B2238] transition hover:border-mustard-200">
+                <button className="flex h-10 w-10 items-center justify-center rounded-xl border border-cream-200 bg-white text-[#0B2238] transition hover:border-mustard-200">
                   <ChevronRight size={18} />
                 </button>
 
@@ -315,21 +315,21 @@ export default function ArticlesPage() {
                   ۱
                 </button>
 
-                <button className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#E7DED2] bg-white transition hover:border-mustard-200">
+                <button className="flex h-10 w-10 items-center justify-center rounded-xl border border-cream-200 bg-white transition hover:border-mustard-200">
                   ۲
                 </button>
 
-                <button className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#E7DED2] bg-white transition hover:border-mustard-200">
+                <button className="flex h-10 w-10 items-center justify-center rounded-xl border border-cream-200 bg-white transition hover:border-mustard-200">
                   ۳
                 </button>
 
                 <span className="px-1 text-[#7A8694]">...</span>
 
-                <button className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#E7DED2] bg-white transition hover:border-mustard-200">
+                <button className="flex h-10 w-10 items-center justify-center rounded-xl border border-cream-200 bg-white transition hover:border-mustard-200">
                   ۱۰
                 </button>
 
-                <button className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#E7DED2] bg-white text-[#0B2238] transition hover:border-mustard-200">
+                <button className="flex h-10 w-10 items-center justify-center rounded-xl border border-cream-200 bg-white text-[#0B2238] transition hover:border-mustard-200">
                   <ChevronLeft size={18} />
                 </button>
               </div>
@@ -339,8 +339,8 @@ export default function ArticlesPage() {
           {/* Sidebar */}
           <aside dir="rtl" className="space-y-6">
             {/* Search */}
-            <div className="rounded-[24px] border border-[#E7DED2] bg-white p-5 shadow-sm">
-              <div className="flex items-center gap-3 rounded-xl border border-[#E7DED2] bg-white px-4">
+            <div className="rounded-[24px] border border-cream-200 bg-white p-5 shadow-sm">
+              <div className="flex items-center gap-3 rounded-xl border border-cream-200 bg-white px-4">
                 <Search size={20} className="text-[#7A8694]" />
 
                 <input
@@ -354,7 +354,7 @@ export default function ArticlesPage() {
             </div>
 
             {/* Popular Articles */}
-            <div className="rounded-[24px] border border-[#E7DED2] bg-white p-7 shadow-sm">
+            <div className="rounded-[24px] border border-cream-200 bg-white p-7 shadow-sm">
               <h3 className="text-center text-xl font-extrabold">
                 مقالات پربازدید
               </h3>
@@ -393,7 +393,7 @@ export default function ArticlesPage() {
             </div>
 
             {/* Newsletter */}
-            <div className="rounded-[24px] bg-[#061B2E] p-7 text-white shadow-xl">
+            <div className="rounded-[24px] bg-black-300 p-7 text-white shadow-xl">
               <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center text-mustard-200">
                 <Mail size={44} strokeWidth={1.3} />
               </div>
@@ -419,7 +419,7 @@ export default function ArticlesPage() {
 
               <button
                 type="button"
-                className="mt-4 w-full rounded-xl bg-mustard-200 py-4 font-semibold text-white transition hover:bg-[#B18435]"
+                className="mt-4 w-full rounded-xl bg-mustard-200 py-4 font-semibold text-white transition hover:bg-mustard-100"
               >
                 عضویت در خبرنامه
               </button>
@@ -436,7 +436,7 @@ export default function ArticlesPage() {
       <section className="px-6 pb-10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 rounded-[24px] bg-cream-100 p-7 text-center md:flex-row md:text-right">
           <div className="flex flex-col items-center gap-5 md:flex-row">
-            <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[#E8D8C0] text-[#B18435]">
+            <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[#E8D8C0] text-mustard-100">
               <BookOpen size={36} strokeWidth={1.5} />
             </div>
 
@@ -449,7 +449,7 @@ export default function ArticlesPage() {
 
           <Link
             to="/contact"
-            className="shrink-0 rounded-xl border border-mustard-200 px-8 py-3 font-semibold text-[#B18435] transition hover:bg-mustard-200 hover:text-white"
+            className="shrink-0 rounded-xl border border-mustard-200 px-8 py-3 font-semibold text-mustard-100 transition hover:bg-mustard-200 hover:text-white"
           >
             تماس با من
           </Link>

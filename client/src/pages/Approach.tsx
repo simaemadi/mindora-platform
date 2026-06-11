@@ -139,7 +139,7 @@ export default function ApproachPage() {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="/booking"
-                className="inline-flex items-center gap-3 rounded-xl bg-[#061B2E] px-6 py-3.5 text-sm font-bold text-white transition hover:bg-[#0B2A45]"
+                className="inline-flex items-center gap-3 rounded-xl bg-black-300 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-[#0B2A45]"
               >
                 رزرو نوبت آنلاین
                 <CalendarDays size={18} className="text-mustard-200" />
@@ -147,7 +147,7 @@ export default function ApproachPage() {
 
               <a
                 href="/services"
-                className="inline-flex items-center gap-3 rounded-xl border border-mustard-200 px-6 py-3.5 text-sm font-bold text-[#B18435] transition hover:bg-mustard-200 hover:text-white"
+                className="inline-flex items-center gap-3 rounded-xl border border-mustard-200 px-6 py-3.5 text-sm font-bold text-mustard-100 transition hover:bg-mustard-200 hover:text-white"
               >
                 آشنایی با خدمات
               </a>
@@ -170,7 +170,7 @@ export default function ApproachPage() {
               <Leaf size={190} strokeWidth={1.1} />
             </div>
 
-            <div className="absolute bottom-10 left-20 h-24 w-32 rounded-[50%] bg-[#E7DED2]" />
+            <div className="absolute bottom-10 left-20 h-24 w-32 rounded-[50%] bg-cream-200" />
           </div>
         </div>
       </section>
@@ -184,15 +184,15 @@ export default function ApproachPage() {
             return (
               <div
                 key={item.title}
-                className="rounded-[26px] border border-[#E7DED2] bg-white p-8 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                className="rounded-[26px] border border-cream-200 bg-white p-8 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-[#E7DED2] bg-[#FAF8F4] text-mustard-200">
+                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-cream-200 bg-[#FAF8F4] text-mustard-200">
                   <Icon size={40} strokeWidth={1.4} />
                 </div>
 
                 <h3 className="mt-6 text-xl font-extrabold">{item.title}</h3>
 
-                <p className="mt-4 text-sm leading-8 text-[#52606D]">
+                <p className="mt-4 text-sm leading-8 text-black-500">
                   {item.text}
                 </p>
               </div>
@@ -217,13 +217,13 @@ export default function ApproachPage() {
 
             {processSteps.map((step) => (
               <div key={step.number} className="relative text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-mustard-200 bg-white text-sm font-extrabold text-[#B18435] shadow-sm">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-mustard-200 bg-white text-sm font-extrabold text-mustard-100 shadow-sm">
                   {step.number}
                 </div>
 
                 <h3 className="mt-6 text-lg font-extrabold">{step.title}</h3>
 
-                <p className="mx-auto mt-3 max-w-[220px] text-sm leading-7 text-[#52606D]">
+                <p className="mx-auto mt-3 max-w-[220px] text-sm leading-7 text-black-500">
                   {step.text}
                 </p>
               </div>
@@ -252,7 +252,7 @@ export default function ApproachPage() {
               return (
                 <div
                   key={item.title}
-                  className="flex gap-5 rounded-[22px] border border-[#E7DED2] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                  className="flex gap-5 rounded-[22px] border border-cream-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
                 >
                   <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#FAF8F4] text-mustard-200">
                     <Icon size={34} strokeWidth={1.4} />
@@ -263,7 +263,7 @@ export default function ApproachPage() {
                     <p className="mt-1 font-bold text-[#263849]">
                       {item.subtitle}
                     </p>
-                    <p className="mt-3 text-sm leading-7 text-[#52606D]">
+                    <p className="mt-3 text-sm leading-7 text-black-500">
                       {item.text}
                     </p>
                   </div>
@@ -288,7 +288,7 @@ export default function ApproachPage() {
           </div>
 
           <div className="mt-10 grid gap-8 lg:grid-cols-2">
-            <div className="rounded-[26px] border border-[#E7DED2] bg-white p-8 shadow-sm">
+            <div className="rounded-[26px] border border-cream-200 bg-white p-8 shadow-sm">
               <h3 className="text-center text-2xl font-extrabold">
                 جلسات شامل
               </h3>
@@ -306,7 +306,7 @@ export default function ApproachPage() {
               </ul>
             </div>
 
-            <div className="rounded-[26px] border border-[#E7DED2] bg-white p-8 shadow-sm">
+            <div className="rounded-[26px] border border-cream-200 bg-white p-8 shadow-sm">
               <h3 className="text-center text-2xl font-extrabold">
                 جلسات شامل نیست
               </h3>
