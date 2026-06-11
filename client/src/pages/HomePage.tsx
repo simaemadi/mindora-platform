@@ -1,8 +1,8 @@
 import React from "react";
-import HeroSlider from "../components/Hero/HeroSlider";
-import SupportSections from "../components/Home/SupportSections";
-import TestimonialsSection from "../components/Home/TestimonialsSection";
-import AboutSection from "../components/Home/AboutSection";
+import HeroSlider from "../components/hero/HeroSlider";
+import SupportSections from "../components/home/SupportSections";
+import TestimonialsSection from "../components/home/TestimonialsSection";
+import AboutSection from "../components/home/AboutSection";
 
 const HomePage = () => {
   return (

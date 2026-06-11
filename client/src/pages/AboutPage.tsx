@@ -1,9 +1,9 @@
 import React from "react";
-import AboutMeSection from "../components/AboutMe/AboutMeSection";
-import AboutMeValue from "../components/AboutMe/AboutMeValue";
-import AboutMeApproach from "../components/AboutMe/AboutMeApproach";
-import AboutMeEducation from "../components/AboutMe/AboutMeEducation";
-import AboutMeQuote from "../components/AboutMe/AboutMeQuote";
+import AboutMeSection from "../components/aboutMe/AboutMeSection";
+import AboutMeValue from "../components/aboutMe/AboutMeValue";
+import AboutMeApproach from "../components/aboutMe/AboutMeApproach";
+import AboutMeEducation from "../components/aboutMe/AboutMeEducation";
+import AboutMeQuote from "../components/aboutMe/AboutMeQuote";
 
 export default function AboutPage() {
   return (

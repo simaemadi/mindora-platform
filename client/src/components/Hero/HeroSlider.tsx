@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { slides } from "../Hero/HeroData";
-import HeroContent from "../Hero/HeroContent";
-import HeroImage from "../Hero/HeroImage";
+import { slides } from "./HeroData";
+import HeroContent from "./HeroContent";
+import HeroImage from "./HeroImage";
 
 const SLIDER_INTERVAL = 6000;
 
