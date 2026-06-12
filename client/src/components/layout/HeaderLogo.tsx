@@ -11,9 +11,10 @@ export function HeaderLogo() {
         className="h-14 w-14 object-contain"
       />
 
-      <div>
+      <div className="text-white-100"> {/* class div delete*/}
         <h1 className="font-bold">{siteInfo.doctorName}</h1>
-        <p className="text-xs text-slate-600">{siteInfo.specialty}</p>
+        <p className="text-xs">{siteInfo.specialty}</p>  
+        {/* text-slate-600 */}
       </div>
     </NavLink>
   );
