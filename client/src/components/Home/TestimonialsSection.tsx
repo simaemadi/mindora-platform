@@ -11,7 +11,7 @@ import {
 export default function TestimonialsSection() {
   return (
     <section dir="rtl" className="bg-white-200 py-14">
-      <div className="mx-auto max-w-7xl px-5 md:px-8">
+      <div className="mx-auto px-5 md:px-8">
         <StatsBox />
 
         <div className="mt-6">

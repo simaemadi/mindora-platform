@@ -1,4 +1,5 @@
-import icon from "../assets/images/icon.png";
+import icon from "../assets/images/iconBlue.png";
+// import icon from "../assets/images/icon.png";
 
 export const siteInfo = {
   doctorName: "سولماز بخشی بابایی",

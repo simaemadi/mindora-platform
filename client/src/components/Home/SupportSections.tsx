@@ -8,7 +8,8 @@ export default function SupportSections() {
   
   return (
     <section dir="rtl" className="bg-white-200 py-8">
-      <div className="mx-auto max-w-7xl px-3 md:px-8">
+      <div className="mx-auto px-3 md:px-8"> 
+        {/* max-w-7xl  */}
         <SectionTitle title="در چه زمینه‌هایی می‌توانم کمک کنم؟" />
 
         <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">

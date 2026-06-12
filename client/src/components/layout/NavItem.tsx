@@ -16,7 +16,7 @@ export function NavItem({
           "transition text-sm font-medium",
           isActive
             ? "text-mustard-200"
-            : "text-black-600 hover:text-mustard-200",
+            : "text-white-100 hover:text-mustard-200",  //text-black-600
         ].join(" ")
       }
     >

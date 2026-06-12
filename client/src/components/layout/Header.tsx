@@ -26,7 +26,7 @@ export default function Header() {
   };
 
   return (
-    <header dir="rtl" className="border-b border-slate-200 bg-cream-100">
+    <header dir="rtl" className="border-b border-slate-200 bg-blue-100">
       <div className="mx-auto flex h-20 mx-auto items-center justify-between px-4">
         <HeaderLogo />
 

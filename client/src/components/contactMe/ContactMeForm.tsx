@@ -195,7 +195,7 @@ export default function ContactMeForm() {
 
                     <button
                         type="submit"
-                        className="flex h-14 w-full items-center justify-center gap-3 rounded-xl bg-blue-100 font-bold transition hover:bg-blue-200"
+                        className="flex h-14 w-full items-center justify-center gap-3 rounded-xl bg-blue-100 font-bold transition hover:bg-blue-100"
                     >
                         <Send size={20} className="text-mustard-200" />
                         <p className="!text-mustard-200">

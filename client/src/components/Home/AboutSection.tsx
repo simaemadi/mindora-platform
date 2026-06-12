@@ -7,7 +7,7 @@ import { aboutData } from "../../data/aboutData";
 export default function AboutSection() {
   return (
     <section dir="rtl" className="bg-white-200 py-2 md:py-4">
-      <div className="mx-auto max-w-7xl px-5 md:px-8">
+      <div className="mx-auto px-5 md:px-8">
         <div className="grid overflow-hidden rounded-3xl bg-blue-100 shadow-xl md:grid-cols-2">
           
           {/* Content */}

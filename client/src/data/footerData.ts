@@ -24,7 +24,7 @@ export const footerData = {
     buttonTo: "/contact",
   },
 
-  copyright: "۱۴۰۳ دکتر نرگس محمدی، تمام حقوق محفوظ است.",
+  copyright: "دکتر نرگس محمدی، تمام حقوق محفوظ است",
 
   links: [
     { id: "faq", label: "سوالات متداول", to: "/faq" },

@@ -6,12 +6,13 @@ import AboutSection from "../components/home/AboutSection";
 
 const HomePage = () => {
   return (
-<div className="text-4xl font-bold text-red-500">
-   <HeroSlider />
-   <SupportSections />
-   <AboutSection />
-   <TestimonialsSection />
-</div>
+    // {/* <div className="text-4xl font-bold px-10 py-8">  slider ba fasele*/}
+    <main dir="rtl" className="min-h-screen overflow-hidden bg-white-200">
+      <HeroSlider />
+      <SupportSections />
+      <AboutSection />
+      <TestimonialsSection />
+    </main>
   );
 };
 

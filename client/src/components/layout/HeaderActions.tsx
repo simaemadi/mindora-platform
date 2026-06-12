@@ -36,7 +36,7 @@ export function HeaderActions({
 
       <button
         onClick={() => setMobileOpen((p) => !p)}
-        className="lg:hidden"
+        className="lg:hidden text-white-100"
         aria-label="toggle menu"
       >
         {mobileOpen ? <X size={26} /> : <Menu size={26} />}
