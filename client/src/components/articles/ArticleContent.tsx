@@ -69,7 +69,7 @@ export default function ArticleContent({
     };
 
     return (
-        <section className="px-6 pb-12 pt-[8rem]">
+        <section className="px-6 pb-12 pt-32">
             <div
                 dir="ltr"
                 className="mx-auto grid max-w-8xl gap-8 lg:grid-cols-[1fr_330px] px-10"
@@ -86,14 +86,14 @@ export default function ArticleContent({
                     </div>
                     {/* Search */}
                     <div className="flex items-center rounded-xl border border-cream-200 bg-white-100 px-4 mb-8">
-                        <Search size={20} className="text-[#7A8694] " />
+                        <Search size={20} className="text-black-500 " />
 
                         <input
                             type="text"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             placeholder="جستجو در مقالات..."
-                            className="w-full bg-transparent py-4 pr-2 text-sm outline-none placeholder:text-[#9AA4AF]"
+                            className="w-full bg-transparent py-4 pr-4 text-sm outline-none placeholder:text-black-500"
                         />
                     </div>
                     {filteredArticles.length > 0 ? (
@@ -138,7 +138,7 @@ export default function ArticleContent({
                                 <Link
                                     key={article.slug}
                                     to={`/articles/${article.slug}`}
-                                    className="flex gap-4 rounded-xl p-2 transition hover:bg-[#FAF7F2]"
+                                    className="flex gap-4 rounded-xl p-2 transition hover:bg-cream-400"
                                 >
                                     <img
                                         src={article.image}
@@ -151,7 +151,7 @@ export default function ArticleContent({
                                             {article.title}
                                         </h4>
 
-                                        <p className="mt-1 text-xs text-[#7A8694]">
+                                        <p className="mt-1 text-xs text-black-500">
                                             {article.readTime}
                                         </p>
                                     </div>
@@ -176,11 +176,11 @@ export default function ArticleContent({
                         </p>
 
                         <div className="mt-6 flex items-center rounded-xl bg-white-100 px-4">
-                            <Mail size={18} className="text-[#9AA4AF]" />
+                            <Mail size={18} className="text-black-500" />
                             <input
                                 type="email"
                                 placeholder="ایمیل شما"
-                                className="w-full bg-transparent py-4 px-2 text-sm text-[#0B2238] outline-none placeholder:text-[#9AA4AF]"
+                                className="w-full bg-transparent py-4 px-2 text-sm text-black-600 outline-none placeholder:text-black-500"
                             />
 
                         </div>

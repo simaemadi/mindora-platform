@@ -19,7 +19,7 @@ export default function ArticleHero({
   };
 
   return (
-    <section className="relative bg-[#FAF8F3] px-6 pt-16 pb-[15rem] h-[470px] md:h-[320px]">
+    <section className="relative h-96 bg-cream-400 px-6 pt-16 pb-60 md:h-80">
       {/* Decorative image */}
       <div className="pointer-events-none absolute left-8 top-0 z-0">
         <img
@@ -43,7 +43,7 @@ export default function ArticleHero({
             <span className="h-px flex-1 bg-mustard-300" />
           </div>
 
-          <div className="mx-auto max-w-2xl text-base leading-8 text-[#10263D]">
+          <div className="mx-auto max-w-2xl text-base leading-8 text-black-500">
             <p className="mt-6">
               در این بخش می‌توانید مقالات علمی و کاربردی در حوزه روانشناسی،
             </p>
@@ -55,7 +55,7 @@ export default function ArticleHero({
       </div>
 
       {/* Category */}
-      <div className="absolute left-0 right-0  z-20 mx-auto mx-12 overflow-hidden rounded-[26px] border border-[#E8DED1] bg-white-100 px-6 shadow-[0_20px_55px_rgba(16,39,65,0.08)]">
+      <div className="absolute left-0 right-0  z-20 mx-12 overflow-hidden rounded-[26px] border border-cream-200 bg-white-100 px-6 shadow-[0_20px_55px_rgba(16,39,65,0.08)]">
         <div className="grid grid-cols-3 gap-3 bg-white md:grid-cols-6 lg:grid-cols-6">
           {categories.map((item: any, index) => {
             const Icon = item.icon;
@@ -69,23 +69,23 @@ export default function ArticleHero({
                 className="relative rounded-2xl bg-white px-4 py-3 text-center transition hover:bg-white"
               >
                 {index !== categories.length - 1 && (
-                  <span className="absolute left-0 top-1/2 hidden h-20 w-px -translate-y-1/2 bg-[#E8DED1] lg:block" />
+                  <span className="absolute left-0 top-1/2 hidden h-20 w-px -translate-y-1/2 bg-cream-200 lg:block" />
                 )}
 
                 <div
                   className={`mx-auto flex h-20 w-20 items-center justify-center rounded-full border bg-white shadow-sm transition ${isActive
                     ? "border-mustard-200 text-mustard-200"
-                    : "border-[#E8DED1] text-mustard-200"
+                    : "border-cream-200 text-mustard-200"
                     }`}
                 >
                   <Icon size={34} strokeWidth={1.5} />
                 </div>
 
-                <h3 className="mt-4 text-sm font-extrabold text-[#10263D]">
+                <h3 className="mt-4 text-sm font-extrabold text-black-100">
                   {item.title}
                 </h3>
 
-                <p className="mt-2 text-xs text-[#7A8694]">
+                <p className="mt-2 text-xs text-black-500">
                   {item.id === "all" || item.title === "همه مقالات"
                     ? "همه موضوعات"
                     : `${getCategoryCount(item).toLocaleString("fa-IR")} مقاله`}

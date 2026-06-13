@@ -8,7 +8,7 @@ export default function ArticlesPage() {
   const [activeCategory, setActiveCategory] = useState("all");
 
   return (
-    <main dir="rtl" className="min-h-screen bg-white-100 text-[#0B2238]">
+    <main dir="rtl" className="min-h-screen bg-white-100">
       <ArticleHero
         activeCategory={activeCategory}
         onCategoryChange={setActiveCategory}

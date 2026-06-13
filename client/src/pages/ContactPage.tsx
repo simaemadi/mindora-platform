@@ -10,7 +10,7 @@ import ContactMeFaq from "../components/contactMe/ContactMeFaq";
 
 export default function ContactPage() {
   return (
-    <div dir="rtl" className="min-h-screen bg-[#F8F4EE] text-[#0B2238]">
+    <div dir="rtl" className="min-h-screen bg-cream-400 text-[#0B2238]">
       <ContactMeHero />
       <ContactMeCard />
       <ContactMeForm />
