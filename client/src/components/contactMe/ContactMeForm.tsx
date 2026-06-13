@@ -104,7 +104,7 @@ export default function ContactMeForm() {
 
                         return (
                             <div key={item.title} className="flex gap-4">
-                                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white text-mustard-200 shadow-sm">
+                                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white-100text-mustard-200 shadow-sm">
                                     <Icon size={26} strokeWidth={1.5} />
                                 </div>
 
@@ -121,7 +121,7 @@ export default function ContactMeForm() {
             </aside>
 
             {/* Form */}
-            <section className="rounded-[28px] border border-cream-200 bg-white p-8 shadow-sm">
+            <section className="rounded-[28px] border border-cream-200 bg-white-100p-8 shadow-sm">
                 <h2 className="text-center text-2xl font-extrabold">
                     {form.title}
                 </h2>
@@ -146,7 +146,7 @@ export default function ContactMeForm() {
                             onChange={handleChange}
                             type="text"
                             placeholder={form.placeholders.fullName}
-                            className="h-14 rounded-xl border border-cream-200 bg-white px-4 text-sm outline-none transition placeholder:text-black-500 focus:border-mustard-200"
+                            className="h-14 rounded-xl border border-cream-200 bg-white-100px-4 text-sm outline-none transition placeholder:text-black-500 focus:border-mustard-200"
                         />
 
                         <input
@@ -155,7 +155,7 @@ export default function ContactMeForm() {
                             onChange={handleChange}
                             type="tel"
                             placeholder={form.placeholders.phone}
-                            className="h-14 rounded-xl border border-cream-200 bg-white px-4 text-sm outline-none transition placeholder:text-black-500 focus:border-mustard-200"
+                            className="h-14 rounded-xl border border-cream-200 bg-white-100px-4 text-sm outline-none transition placeholder:text-black-500 focus:border-mustard-200"
                         />
                     </div>
 
@@ -179,7 +179,7 @@ export default function ContactMeForm() {
                         onChange={handleChange}
                         placeholder={form.placeholders.message}
                         rows={6}
-                        className="w-full resize-none rounded-xl border border-cream-200 bg-white px-4 py-4 text-sm leading-7 outline-none transition placeholder:text-black-500 focus:border-mustard-200"
+                        className="w-full resize-none rounded-xl border border-cream-200 bg-white-100px-4 py-4 text-sm leading-7 outline-none transition placeholder:text-black-500 focus:border-mustard-200"
                     />
 
                     <label className="flex cursor-pointer items-center gap-3 text-sm text-black-500">
@@ -235,7 +235,7 @@ function SelectField({
                 name={name}
                 value={value}
                 onChange={onChange}
-                className="h-14 w-full appearance-none rounded-xl border border-cream-200 bg-white px-4 text-sm text-black-500 outline-none transition focus:border-mustard-200"
+                className="h-14 w-full appearance-none rounded-xl border border-cream-200 bg-white-100px-4 text-sm text-black-500 outline-none transition focus:border-mustard-200"
             >
                 {options.map((option) => (
                     <option key={`${name}-${option.value}`} value={option.value}>

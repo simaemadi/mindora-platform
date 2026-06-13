@@ -90,7 +90,7 @@ function SectionTitle({ title }: { title: string }) {
 
 function TestimonialCard({ item }: { item: TestimonialItem }) {
   return (
-    <article className="relative flex h-full min-h-[290px] flex-col rounded-xl border border-cream-300 bg-white px-6 py-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-mustard-200 hover:shadow-md">
+    <article className="relative flex h-full min-h-[290px] flex-col rounded-xl border border-cream-300 bg-white-100 px-6 py-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-mustard-200 hover:shadow-md">
       <Quote
         size={34}
         strokeWidth={2}

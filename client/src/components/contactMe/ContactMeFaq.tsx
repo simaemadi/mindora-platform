@@ -24,7 +24,7 @@ export default function ContactMeCard() {
                     {faq.items.map((item: any) => (
                         <div
                             key={item.question}
-                            className="bg-white p-6 md:border-l md:border-cream-300"
+                            className="bg-white-100p-6 md:border-l md:border-cream-300"
                         >
                             <div className="mb-4 flex items-center gap-3">
                                 <HelpCircle size={22} className="text-mustard-200" />

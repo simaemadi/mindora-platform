@@ -31,7 +31,7 @@ export function Dropdown({
       </button>
 
       <div
-        className="invisible absolute right-0 top-full z-50 mt-2 w-60 rounded-2xl border bg-white p-2
+        className="invisible absolute right-0 top-full z-50 mt-2 w-60 rounded-2xl border bg-white-100 p-2
         opacity-0 shadow-xl transition-all group-hover:visible group-hover:opacity-100"
       >
         {items.map((item) => (
@@ -42,8 +42,8 @@ export function Dropdown({
             className={({ isActive }) =>
               `block rounded-xl px-3 py-2 text-sm transition ${
                 isActive
-                  ? "bg-white-100 text-mustard-200"
-                  : "hover:bg-white-100"
+                  ? "bg-white-100  text-mustard-200"
+                  : "hover:bg-white-100 "
               }`
             }
           >

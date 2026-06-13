@@ -19,7 +19,7 @@ export default function ContactMeMap() {
 
     return (
         <section id="map" className="px-6 pb-14">
-            <div className="mx-auto grid max-w-7xl overflow-hidden rounded-[28px] border border-cream-200 bg-white shadow-sm lg:grid-cols-[1.2fr_0.8fr]">
+            <div className="mx-auto grid max-w-7xl overflow-hidden rounded-[28px] border border-cream-200 bg-white-100 shadow-sm lg:grid-cols-[1.2fr_0.8fr]">
                 <div className="h-[360px] w-full">
                     <iframe
                         title={map.title}

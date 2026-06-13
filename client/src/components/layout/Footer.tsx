@@ -71,7 +71,7 @@ export default function Footer() {
 
   return (
     <footer dir="rtl" className="px-3 pb-4 sm:px-4 sm:pb-5">
-      <div className="mx-auto max-w-screen-2xl overflow-hidden rounded-[1.5rem] bg-blue-100 text-white shadow-2xl shadow-slate-900/20">
+      <div className="mx-auto max-w-screen-2xl overflow-hidden rounded-[1.5rem] bg-blue-100 text-white-100 shadow-2xl shadow-slate-900/20">
         <div className="relative isolate h-[230px] overflow-hidden bg-blue-100 px-5 sm:px-6 md:px-10 lg:px-16">
           <div className="pointer-events-none absolute inset-y-0 left-0 w-[155px] overflow-hidden opacity-45 sm:w-[210px] sm:opacity-65 md:w-[260px] md:opacity-95 lg:w-[300px] xl:w-[340px]">
             <img

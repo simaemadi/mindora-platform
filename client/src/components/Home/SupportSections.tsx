@@ -56,7 +56,7 @@ function HelpAreaCard({ item }: { item: HelpArea }) {
   const Icon = item.icon;
 
   return (
-    <div className="group flex min-h-[150px] flex-col items-center justify-center rounded-xl border border-cream-300 bg-white px-4 py-6 text-center shadow-sm transition duration-300 hover:-translate-y-1 hover:border-mustard-200 hover:shadow-md">
+    <div className="group flex min-h-[150px] flex-col items-center justify-center rounded-xl border border-cream-300 bg-white-100 px-4 py-6 text-center shadow-sm transition duration-300 hover:-translate-y-1 hover:border-mustard-200 hover:shadow-md">
       <Icon
         size={42}
         strokeWidth={1.4}

@@ -11,7 +11,7 @@ export default function AboutSection() {
         <div className="grid overflow-hidden rounded-3xl bg-blue-100 shadow-xl md:grid-cols-2">
           
           {/* Content */}
-          <div className="order-2 flex flex-col justify-center px-6 py-8 text-white md:order-1 md:px-10 lg:px-14">
+          <div className="order-2 flex flex-col justify-center px-6 py-8 text-white-100 md:order-1 md:px-10 lg:px-14">
             <h2 className="text-center text-2xl font-bold text-mustard-100 md:text-3xl">
               {aboutData.title}
             </h2>

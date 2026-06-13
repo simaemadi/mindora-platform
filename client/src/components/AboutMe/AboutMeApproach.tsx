@@ -54,7 +54,7 @@ export default function AboutMeApproach() {
               return (
                 <div
                   key={item.title}
-                  className="flex min-h-[58px] items-center justify-center gap-4 rounded-xl border border-cream-200 bg-white px-5 py-3 shadow-[0_10px_30px_rgba(6,27,46,0.03)]"
+                  className="flex min-h-[58px] items-center justify-center gap-4 rounded-xl border border-cream-200 bg-white-100 px-5 py-3 shadow-[0_10px_30px_rgba(6,27,46,0.03)]"
                 >
                   <Icon
                     size={25}
@@ -86,7 +86,7 @@ function Card({
 }) {
   return (
     <div
-      className={`min-h-[340px] rounded-[22px] border border-cream-200 bg-white px-6 py-7 shadow-[0_18px_55px_rgba(6,27,46,0.04)] ${className}`}
+      className={`min-h-[340px] rounded-[22px] border border-cream-200 bg-white-100 px-6 py-7 shadow-[0_18px_55px_rgba(6,27,46,0.04)] ${className}`}
     >
       <SectionTitle title={title} />
       <div className="mt-6">{children}</div>

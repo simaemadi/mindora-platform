@@ -6,7 +6,7 @@ export default function AboutMeEducation() {
         <section dir="rtl" className="px-4 pb-8 sm:px-6">
             <div className="mx-auto space-y-5 bg-white-200">
                 {/* Education */}
-                <div className="rounded-[18px] border border-cream-200 bg-white px-6 py-6 shadow-sm">
+                <div className="rounded-[18px] border border-cream-200 bg-white-100 px-6 py-6 shadow-sm">
                     <SectionTitle title="تحصیلات و دوره‌های تخصصی" />
 
                     <div className="mt-7 grid gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -43,7 +43,7 @@ export default function AboutMeEducation() {
                 </div>
 
                 {/* Stats */}
-                <div className="rounded-[18px] bg-black-300 px-8 py-6 text-white shadow-sm">
+                <div className="rounded-[18px] bg-black-300 px-8 py-6 text-white-100 shadow-sm">
                     <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
                         {stats.map((item, index) => {
                             const Icon = item.icon;
